@@ -98,6 +98,10 @@
             align-items: center;
             gap: 40px;
 
+            @media(max-width:768px){
+                grid-template-columns: 1fr;
+            }
+
             .info{
                 display: flex;
                 align-items: flex-start;
