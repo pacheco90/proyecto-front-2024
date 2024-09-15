@@ -7,6 +7,10 @@
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
 
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+
         .info{
             display: flex;
             align-items: flex-start;
@@ -16,6 +20,11 @@
 
             h3{
                 @include dynamic($primary-font-semibold, $dark-blue, 600, 48px, left, 56px);
+
+                @media (max-width:768px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
             }
 
             p{
