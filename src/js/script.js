@@ -20,18 +20,22 @@
 
 
 // console.log(lanzador);
+const navigator = document.querySelector(".nav1");
 
 const open = document.querySelector(".nav-btn");
-const navigator = document.querySelector(".nav1");
-const close = document.querySelector(".close");
+const close = document.querySelector(".close-nav");
+const out = document.querySelector("main");
 
-console.log(navigator);
+
 
 open.addEventListener("click", function(){
-    navigator.style.display = "flex";
+    navigator.classList.add('show');
 });
 
-
 close.addEventListener("click", function(){
-    navigator.style.display = "none";
+    navigator.classList.remove('show');
+});
+
+out.addEventListener("click", function(){
+    navigator.classList.remove('show');
 });
