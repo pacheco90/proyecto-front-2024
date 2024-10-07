@@ -46,8 +46,6 @@
 //     navigator.classList.remove('show');
 // });
 
-
-
 //Segunda funcionalidad
 
 //Elemento afectado relativo a las acciones
@@ -74,3 +72,7 @@ const hiddeNavigator = function(){
 open.addEventListener("click", showNavigator);
 close.addEventListener("click", hiddeNavigator);
 out.addEventListener("click", hiddeNavigator);
+
+
+AOS.init();
+
