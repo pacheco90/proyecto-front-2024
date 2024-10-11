@@ -18,6 +18,9 @@
                 background: #fff;
                 box-shadow: 7px 7px 20px rgba(#000,0.1);
 
+                @media (max-width:768px) {
+                    padding: 60px 20px;
+                }
 
                 figure{
                     display: flex;
@@ -65,6 +68,11 @@
                 .info{
                     h2{
                         @include dynamic($primary-font-semibold, $dark-blue, 600, 38px, left, 50px);
+
+                        @media (max-width:768px) {
+                            font-size: 30px;
+                            line-height: 35px;
+                        }
                     }
 
                     p{
@@ -112,6 +120,11 @@
                 h1{
                     @include dynamic($primary-font-semibold, $dark-blue, 600, 72px, left, 84px);
                     margin:0;
+
+                    @media (max-width:768px) {
+                        font-size: 40px;
+                        line-height: 45px;
+                    }
                 }
 
                 p{
