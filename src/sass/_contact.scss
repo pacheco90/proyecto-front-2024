@@ -11,6 +11,11 @@
         padding: 100px;
         background: #fff;
 
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+            padding: 40px 20px;
+        }
+
         .info{
             display: flex;
             align-items: flex-start;
@@ -20,6 +25,11 @@
 
             h3{
                 @include dynamic($primary-font-semibold, $dark-blue, 600, 38px, left, 50px);
+
+                @media (max-width:768px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
             }
 
             p{
