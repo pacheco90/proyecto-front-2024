@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! This project is a project by formacion dev</h2>
+<h2 align="left">Hi 👋! This is a project by formacion dev</h2>
 
 ###
 
